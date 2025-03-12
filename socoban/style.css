@@ -1,0 +1,35 @@
+.map {
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+}
+.pole {
+    background-color: rgb(231, 215, 195);
+}
+.wall {
+    background-image: url('https://i.pinimg.com/736x/7c/33/cf/7c33cf095a46a2ef28f27a3960fe1c69.jpg') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.goal {
+    background-color: rgb(245, 241, 40);
+}
+.box {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/013/362/672/large_2x/cardboard-box-brown-free-png.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.man {
+    background-image: url('https://w7.pngwing.com/pngs/160/323/png-transparent-computer-icons-person-others.png') ;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
