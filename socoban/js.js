@@ -42,3 +42,12 @@ for(let y = 0; y < map[x].length; y++){
   gameArea.append(row)
 }
 console.log(gameArea);
+
+document.addEventListener('keydown', function(event)){
+    case 'ArrowUp':
+        document.querySelector(`[data-coor="x${man.x}y${man.y}"]`).
+        className = 'cell';
+        man.x--;
+        document.querySelector(`[data-coor="x${man.x}y${man.y}"]`).
+    }
+
