@@ -50,5 +50,7 @@ document.addEventListener('keydown', function(event)){
         className = 'cell';
         man.x--;
         document.querySelector(`[data-coor="x${man.x}y${man.y}"]`).
+        className = 'cell cell-red';
+        span.textContent = "Вверх";
+        break;
     } 
-
