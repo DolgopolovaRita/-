@@ -43,14 +43,48 @@ for(let y = 0; y < map[x].length; y++){
 }
 console.log(gameArea);
 
-document.addEventListener('keydown', function(event)){
-    switch() {
+const man = {
+    x: 3,
+    y: 3,
+    value: 4,
+};
+
+for(let x = 0; x < 10; x++){
+    for(let y = 0; y < 10; y++){
+        const cell = document.createElement('div');
+        cell.className ='cell';
+        cell.dataset.coor = 'x' + x + 'y' + y;
+        gameArea.append(cell);
+    }
+}
+
+const currentPos = document.querySelector(`[data-coor="x${man.x}y${man.y}"]`);
+currentPos.className = 'cell cell-red'
+const span = document.querySelector('.span')
+
+const moveMan = (newX, newY)=> {
+    document.querySelector(`[data-coor="x${man.x}y${man.y}"]`).className = 
+    "cell";
+    document.querySelector(`[data-coor="x${newX}y${newY}"]`).className = 
+    "cell cell-red";
+    man.x = newX;
+    man.y = newY;
+};
+
+
+document.addEventListener('keydown', function(event) {
+    switch(event.code) {
     case 'ArrowUp':
-        document.querySelector(`[data-coor="x${man.x}y${man.y}"]`).
-        className = 'cell';
-        man.x--;
-        document.querySelector(`[data-coor="x${man.x}y${man.y}"]`).
-        className = 'cell cell-red';
-        span.textContent = "Вверх";
+       moveMan(man.x - 1, man.y);
+        break;
+    case 'ArrowDown':
+        moveMan(man.x + 1, man.y);
+        break;
+    case 'ArrowLeft':
+        moveMan(man.x, man.y - 1);
+        break;
+    case 'ArrowRight':
+        moveMan(man.x, man.y + 1);
         break;
     } 
+    });
