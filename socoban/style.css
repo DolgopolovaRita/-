@@ -33,3 +33,32 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+
+
+.wrapper {
+    border: 2px solid #000;
+    margin: 20px auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Скругленные углы */
+}
+
+.gamearea {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+}
+
+.cell-red {
+    background-color: #ca7e7e; /* Цвет для активной ячейки */
+}
