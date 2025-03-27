@@ -88,3 +88,12 @@ document.addEventListener('keydown', function(event) {
         break;
     } 
     });
+
+const getTimer = {
+    value: 0,
+    changeTimer(){
+co9nst TimerID
+
+        
+        
+    
