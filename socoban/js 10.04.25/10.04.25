@@ -147,3 +147,35 @@ document.addEventListener('keydown', function(event) {
         break;
     } 
     });
+
+
+
+
+
+
+// html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Сокобан</title>
+        <script src="js2.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+<body>
+    <div class="map">
+    <div class="gameArea"></div>
+
+    <div class="counter__box">
+        <span class="counter"></span>
+    </div>
+
+<div class="timer"></div>
+<span class="timer__box"></span>
+
+</div>
+<span class="span">hello</span>
+</body>
+</html>
